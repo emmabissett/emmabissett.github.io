@@ -1,0 +1,80 @@
+.logocss{
+  border-radius:25px;
+}
+
+body{
+    background-color: grey;
+    height: auto;
+    margin: 0;  
+}
+
+table{
+    width: 1000px;
+    margin-left: 150px;
+    margin-top: 45px;
+    background-color: rgb(167 255 236) ;
+
+
+  }
+
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+
+ul {
+  display: inline-block;
+  *display: inline;
+  zoom: 1
+}
+
+
+/* Zoom on Hover : https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+* {
+    box-sizing: border-box;
+  }
+  .zoom {
+    transition: transform .2s;
+    width: 257px;
+    height: 260px;
+    margin: 0 auto;
+    background-image: url("img/profilehtml.png");
+  }
+
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+.redHeader {
+	color:red;
+  }
+
+.skillBubble {
+  display:inline;
+  background-color: #2fe073;
+  border-radius: 5px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+div {
+  animation-duration: 2s;
+  animation-name: bounceIn;
